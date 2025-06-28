@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/screens/home/home_screen.dart';
+import 'package:islami_app/screens/home/tabs/quran/details_screen1/details_screen1.dart';
+import 'package:islami_app/screens/home/tabs/quran/details_screen2/details_screen2.dart';
+import 'package:islami_app/utils/app_theme.dart';
 
 void main() {
   runApp(const IslamiApp());
@@ -13,7 +16,15 @@ class IslamiApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: HomeScreen.routeName,
-      routes: {HomeScreen.routeName: (context) => HomeScreen()},
+      routes: {
+        HomeScreen.routeName: (context) => HomeScreen(),
+        DetailsScreen1.routeName: (context) => DetailsScreen1(),
+        DetailsScreen2.routeName: (context) => DetailsScreen2(),
+      },
+      darkTheme:
+          AppTheme
+              .darkTheme, // here I am specifying the properties or the options of the dark theme
+      themeMode: ThemeMode.dark, //here I am telling the app that it will be dark theme
     );
   }
 }
