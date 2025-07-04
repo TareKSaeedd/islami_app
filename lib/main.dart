@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/providers/most_recent_provider.dart';
+import 'package:islami_app/providers/sebha_provider.dart';
 import 'package:islami_app/screens/home/home_screen.dart';
 import 'package:islami_app/screens/home/tabs/quran/details_screen1/details_screen1.dart';
 import 'package:islami_app/screens/home/tabs/quran/details_screen2/details_screen2.dart';
@@ -8,7 +9,13 @@ import 'package:provider/provider.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(create: (context) => MostRecentProvider(), child: const IslamiApp()),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => MostRecentProvider()),
+        ChangeNotifierProvider(create: (context) => SebhaProvider()),
+      ],
+      child: const IslamiApp(),
+    ),
   );
 }
 

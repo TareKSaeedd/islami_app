@@ -75,7 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [Image.asset('assets/images/logo.png'), Expanded(child: tabs[selectedIndex])],
+            children: [Image.asset(AppAssets.logo), Expanded(child: tabs[selectedIndex])],
           ),
         ),
       ],

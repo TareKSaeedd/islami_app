@@ -14,4 +14,8 @@ class AppAssets {
   static const leftCorner = 'assets/images/left_corner.png';
   static const rightCorner = 'assets/images/right_corner.png';
   static const mosqueImg = 'assets/images/mosque_img.png';
+  static const hadeethBg = 'assets/images/hadeeth_background.png';
+  static const logo = 'assets/images/logo.png';
+  static const hadeethMosque = 'assets/images/hadeeth_mosque.png';
+  static const sebha = 'assets/images/sebha.png';
 }

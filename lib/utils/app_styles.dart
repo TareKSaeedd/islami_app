@@ -50,4 +50,11 @@ class AppStyles {
     color: AppColors.primaryColor,
     fontFamily: 'JannaLT',
   );
+
+  static TextStyle bold36white = TextStyle(
+    fontWeight: FontWeight.bold,
+    fontSize: 36,
+    color: AppColors.whiteColor,
+    fontFamily: 'JannaLT',
+  );
 }

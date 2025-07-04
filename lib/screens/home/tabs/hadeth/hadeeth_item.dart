@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:islami_app/models/hadeeth_model.dart';
+import 'package:islami_app/utils/app_assets.dart';
 import 'package:islami_app/utils/app_colors.dart';
 import 'package:islami_app/utils/app_styles.dart';
 
@@ -32,7 +33,7 @@ class _HadeethItemState extends State<HadeethItem> {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: AppColors.primaryColor,
-        image: DecorationImage(image: AssetImage('assets/images/hadeeth_background.png')),
+        image: DecorationImage(image: AssetImage(AppAssets.hadeethBg)),
       ),
       child:
           hadeethModel == null
@@ -44,7 +45,7 @@ class _HadeethItemState extends State<HadeethItem> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Image.asset(
-                        'assets/images/left_corner.png',
+                        AppAssets.leftCorner,
                         width: width * 0.15,
                         height: height * 0.1,
                         color: AppColors.blackColor,
@@ -57,7 +58,7 @@ class _HadeethItemState extends State<HadeethItem> {
                         ),
                       ),
                       Image.asset(
-                        'assets/images/right_corner.png',
+                        AppAssets.rightCorner,
                         width: width * 0.15,
                         height: height * 0.1,
                         color: AppColors.blackColor,
@@ -73,7 +74,7 @@ class _HadeethItemState extends State<HadeethItem> {
                       ),
                     ),
                   ),
-                  Image.asset('assets/images/hadeeth_mosque.png'),
+                  Image.asset(AppAssets.hadeethMosque),
                 ],
               ),
     );
