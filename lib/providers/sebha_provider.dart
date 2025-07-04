@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 
 class SebhaProvider extends ChangeNotifier {
-  int sebha_counter = 0;
+  int sebhaCounter = 0;
+  String tsbehZikr = "سبحان الله";
 
   void increamentSebhaCounter() {
-    sebha_counter++;
+    sebhaCounter++;
+    if (sebhaCounter == 34) {
+      tsbehZikr = "الحمد لله";
+    } else if (sebhaCounter == 67) {
+      tsbehZikr = "الله أكبر";
+    }
     notifyListeners();
   }
 }

@@ -28,8 +28,8 @@ class SebhaTab extends StatelessWidget {
                 left: width * 0.26,
                 child: Column(
                   children: [
-                    Text('سبحان الله', style: AppStyles.bold36white),
-                    Text("${sebhaProvider.sebha_counter}", style: AppStyles.bold36white),
+                    Text(sebhaProvider.tsbehZikr, style: AppStyles.bold36white),
+                    Text("${sebhaProvider.sebhaCounter}", style: AppStyles.bold36white),
                   ],
                 ),
               ),
