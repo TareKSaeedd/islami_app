@@ -14,6 +14,12 @@ class AppStyles {
     color: AppColors.blackColor,
     fontFamily: 'JannaLT',
   );
+  static TextStyle bold16primary = TextStyle(
+    fontWeight: FontWeight.bold,
+    fontSize: 16,
+    color: AppColors.primaryColor,
+    fontFamily: 'JannaLT',
+  );
   static TextStyle bold24black = TextStyle(
     fontWeight: FontWeight.bold,
     fontSize: 24,
