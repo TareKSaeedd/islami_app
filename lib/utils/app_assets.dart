@@ -17,5 +17,6 @@ class AppAssets {
   static const hadeethBg = 'assets/images/hadeeth_background.png';
   static const logo = 'assets/images/logo.png';
   static const hadeethMosque = 'assets/images/hadeeth_mosque.png';
+  static const radioMosque = 'assets/images/radio_mosque.png';
   static const sebha = 'assets/images/sebha.png';
 }

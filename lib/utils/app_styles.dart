@@ -38,6 +38,12 @@ class AppStyles {
     color: AppColors.whiteColor,
     fontFamily: 'JannaLT',
   );
+  static TextStyle bold20black = TextStyle(
+    fontWeight: FontWeight.bold,
+    fontSize: 20,
+    color: AppColors.blackColor,
+    fontFamily: 'JannaLT',
+  );
   static TextStyle bold20bprimary = TextStyle(
     fontWeight: FontWeight.bold,
     fontSize: 20,
