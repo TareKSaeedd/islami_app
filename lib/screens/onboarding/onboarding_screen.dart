@@ -24,8 +24,6 @@ class OnboardingScreen extends StatelessWidget {
       "Praise the name of your Lord, the Most High",
       "You can listen to the Holy Quran Radio through the application for free and easily",
     ];
-    var height = MediaQuery.of(context).size.height;
-    var width = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
         backgroundColor: AppColors.blackColor,
